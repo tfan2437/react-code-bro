@@ -1,5 +1,7 @@
 import "./App.css";
-import FruitsList from "./components/FruitsList";
+import ClickButton from "./components/ClickButton";
+import EventButton from "./components/EventButton";
+import MapList from "./components/MapList";
 import UserGreeting from "./components/UserGreeting";
 
 function App() {
@@ -7,7 +9,9 @@ function App() {
     <div>
       <h1>Hey Bro!</h1>
       {/* <UserGreeting isLoggedIn={true} username="Ting-Wei" /> */}
-      <FruitsList />
+      <MapList />
+      <ClickButton />
+      <EventButton />
     </div>
   );
 }

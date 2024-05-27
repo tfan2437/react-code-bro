@@ -1,6 +1,6 @@
 import { fruits } from "../data/fruits";
 
-const FruitsList = () => {
+const MapList = () => {
   // Ascending Order Sorting
   fruits.sort((a, b) => a.name.localeCompare(b.name));
 
@@ -18,4 +18,4 @@ const FruitsList = () => {
   );
 };
 
-export default FruitsList;
+export default MapList;
