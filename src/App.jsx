@@ -2,10 +2,12 @@ import "./App.css";
 import ClickButton from "./components/ClickButton";
 import EventButton from "./components/EventButton";
 import MapList from "./components/MapList";
+import OnChangeInput from "./components/OnChangeInput";
 import Practice from "./components/Practice";
 import StateComponent from "./components/StateComponent";
 import StateCounter from "./components/StateCounter";
 import UserGreeting from "./components/UserGreeting";
+import ColorPicker from "./components/ColorPicker";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
       {/* <EventButton /> */}
       {/* <StateComponent /> */}
       {/* <StateCounter /> */}
-      <Practice isLoggedIn={false} username="Bro" />
+      {/* <Practice /> */}
+      {/* <OnChangeInput /> */}
+      <ColorPicker />
     </div>
   );
 }
