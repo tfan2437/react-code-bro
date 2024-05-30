@@ -19,9 +19,9 @@ function App() {
       {/* <EventButton /> */}
       {/* <StateComponent /> */}
       {/* <StateCounter /> */}
-      {/* <Practice /> */}
       {/* <OnChangeInput /> */}
-      <ColorPicker />
+      {/* <ColorPicker /> */}
+      <Practice />
     </div>
   );
 }
