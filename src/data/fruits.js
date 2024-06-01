@@ -1,9 +1,10 @@
 export const fruits = [
-  { id: 1, name: "Apple", calories: 95 },
-  { id: 2, name: "Orange", calories: 45 },
-  { id: 3, name: "Banana", calories: 105 },
-  { id: 4, name: "Coconut", calories: 159 },
-  { id: 5, name: "Pineapple", calories: 37 },
-  { id: 6, name: "Grape", calories: 189 },
-  { id: 7, name: "Strawberry", calories: 193 },
+  { id: 1, name: "Apple", calories: 95, color: "Red" },
+  { id: 2, name: "Strawberry", calories: 4, color: "Red" },
+  { id: 3, name: "Orange", calories: 62, color: "Orange" },
+  { id: 4, name: "Banana", calories: 105, color: "Yellow" },
+  { id: 5, name: "Pineapple", calories: 50, color: "Yellow" },
+  { id: 6, name: "Coconut", calories: 354, color: "Brown" },
+  { id: 7, name: "Blueberry", calories: 84, color: "Blue" },
+  { id: 8, name: "Grape", calories: 62, color: "Purple" },
 ];
