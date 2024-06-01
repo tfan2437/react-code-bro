@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const CondRenderState = () => {
-  const [render, setRender] = useState(false);
+  const [render, setRender] = useState(true);
 
   const trueRenderImage =
     "https://live.staticflickr.com/65535/53762849870_376b2448a6_c.jpg";
@@ -18,10 +18,11 @@ const CondRenderState = () => {
 
   return (
     <div>
-      <h1 style={{ color: "#ccc" }}>State Toggle Rendering</h1>
+      <h1 style={{ color: "#ddd" }}>State Toggle Rendering</h1>
+
       {render ? (
         <div>
-          <h1>
+          <h1 style={{ color: "#ddd", margin: "0 0 10px 0" }}>
             Render: <b style={{ color: "#ffaa61" }}>Eyes Monster</b>
           </h1>
           <img
@@ -32,7 +33,7 @@ const CondRenderState = () => {
         </div>
       ) : (
         <div>
-          <h1>
+          <h1 style={{ color: "#ddd", margin: "0 0 10px 0" }}>
             Render: <b style={{ color: "#b2d43c" }}>Mask Zombie</b>
           </h1>
           <img
@@ -51,6 +52,8 @@ const CondRenderState = () => {
             marginRight: "20px",
             border: "3px solid #000",
             background: "#ffaa61",
+            cursor: "pointer",
+            width: "150px",
           }}
         >
           Monster
@@ -63,6 +66,8 @@ const CondRenderState = () => {
             marginRight: "20px",
             border: "3px solid #000",
             background: "#b2d43c",
+            cursor: "pointer",
+            width: "150px",
           }}
         >
           Zombie
