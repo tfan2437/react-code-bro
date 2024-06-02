@@ -1,20 +1,38 @@
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
+
 import "./App.css";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import MainLayout from "./layout/MainLayout";
+import HomePage from "./pages/HomePage";
 import CondRenderPage from "./pages/CondRenderPage";
 import MapPage from "./pages/MapPage";
-import OnClickButton from "./pages/OnClickButton";
+import OnClickButtonPage from "./pages/OnClickButtonPage";
+import OnChangeInputPage from "./pages/OnChangeInputPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
-function App() {
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<MainLayout />}>
+      <Route index element={<HomePage />} />
+      <Route path="/conditional-render" element={<CondRenderPage />} />
+      <Route path="/map()" element={<MapPage />} />
+      <Route path="/onclick-button" element={<OnClickButtonPage />} />
+      <Route path="/onchange-input" element={<OnChangeInputPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Route>
+  )
+);
+
+const App = () => {
   return (
     <>
-      <Navbar />
-      {/* <CondRenderPage /> */}
-      {/* <MapPage /> */}
-      {/* <Footer /> */}
-      <OnClickButton />
+      <RouterProvider router={router} />
     </>
   );
-}
+};
 
 export default App;

@@ -1,4 +1,5 @@
 import reactLogo from "../assets/icons/react.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navTitle = {
@@ -11,10 +12,10 @@ const Navbar = () => {
   const navLink = {
     fontFamily: '"Prompt", sans-serif',
     fontWeight: "500",
-    fontSize: "25px",
+    fontSize: "20px",
     textDecoration: "none",
     color: "#999",
-    marginRight: "15px",
+    marginRight: "25px",
   };
 
   return (
@@ -37,24 +38,24 @@ const Navbar = () => {
         <h1 style={navTitle}>React Toolbox</h1>
       </div>
       <div style={{ paddingBottom: "0px" }}>
-        <a href="#" style={navLink}>
+        <Link to="/" style={navLink}>
           Home
-        </a>
-        <a href="#" style={navLink}>
+        </Link>
+        <Link to="/conditional-render" style={navLink}>
+          Cond Render
+        </Link>
+        <Link to="/map()" style={navLink}>
           .map()
-        </a>
-        <a href="#" style={navLink}>
+        </Link>
+        <Link to="/onclick-button" style={navLink}>
           onClick
-        </a>
-        <a href="#" style={navLink}>
-          TBD
-        </a>
-        <a href="#" style={navLink}>
-          TBD
-        </a>
-        <a href="#" style={navLink}>
-          TBD
-        </a>
+        </Link>
+        <Link to="/onchange-input" style={navLink}>
+          onChange
+        </Link>
+        <Link to="#" style={navLink}>
+          Color Picker
+        </Link>
       </div>
     </nav>
   );

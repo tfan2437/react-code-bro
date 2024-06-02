@@ -1,7 +1,7 @@
 import OnClickTextContent from "../components/OnClickTextContent";
 import OnClickUseState from "../components/OnClickUseState";
 
-const OnClickButton = () => {
+const OnClickButtonPage = () => {
   return (
     <div>
       <OnClickTextContent />
@@ -11,4 +11,4 @@ const OnClickButton = () => {
   );
 };
 
-export default OnClickButton;
+export default OnClickButtonPage;
