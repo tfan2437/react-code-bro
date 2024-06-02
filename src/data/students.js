@@ -5,6 +5,7 @@ export const students = [
     age: 19,
     school: "Cornell University",
     major: "Computer Science",
+    profile: "/images/students-alex.jpg",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const students = [
     age: 20,
     school: "Harvard University",
     major: "Biology",
+    profile: "/images/students-brianna.jpg",
   },
   {
     id: 3,
@@ -19,13 +21,15 @@ export const students = [
     age: 21,
     school: "Stanford University",
     major: "Mechanical Engineering",
+    profile: "/images/students-carlos.jpg",
   },
   {
     id: 4,
-    name: "Dana",
+    name: "David",
     age: 22,
     school: "MIT",
     major: "Physics",
+    profile: "/images/students-david.jpg",
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ export const students = [
     age: 23,
     school: "Princeton University",
     major: "Mathematics",
+    profile: "/images/students-ethan.jpg",
   },
   {
     id: 6,
@@ -40,5 +45,6 @@ export const students = [
     age: 20,
     school: "Yale University",
     major: "Chemistry",
+    profile: "/images/students-fiora.jpg",
   },
 ];

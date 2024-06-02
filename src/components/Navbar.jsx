@@ -26,7 +26,9 @@ const Navbar = () => {
         borderBottom: "3px solid #eee",
       }}
     >
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div
+        style={{ display: "flex", alignItems: "center", marginLeft: "20px" }}
+      >
         <img
           src={reactLogo}
           alt="react-logo"
