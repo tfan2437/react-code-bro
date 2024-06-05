@@ -56,6 +56,9 @@ const Navbar = () => {
         <Link to="#" style={navLink}>
           Color Picker
         </Link>
+        <Link to="/practice" style={navLink}>
+          Practice
+        </Link>
       </div>
     </nav>
   );

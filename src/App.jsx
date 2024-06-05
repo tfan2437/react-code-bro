@@ -13,6 +13,7 @@ import MapPage from "./pages/MapPage";
 import OnClickButtonPage from "./pages/OnClickButtonPage";
 import OnChangeInputPage from "./pages/OnChangeInputPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import PracticePage from "./pages/PracticePage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path="/onclick-button" element={<OnClickButtonPage />} />
       <Route path="/onchange-input" element={<OnChangeInputPage />} />
       <Route path="*" element={<NotFoundPage />} />
+      <Route path="/practice" element={<PracticePage />} />
     </Route>
   )
 );
